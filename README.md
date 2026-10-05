@@ -1,13 +1,76 @@
-# PayMova
-A realistic fintech payments project covering:Transaction success ratesPayment method &amp; channel performanceFraud analysis &amp; lossCustomer &amp; merchant valueFailed transaction reasonsTime trendsClear business recommendations
+# Fintech SQL Business Analysis Project  
+## PayNova – Digital Payments Performance & Fraud Analysis
 
-Issue Impact Fix
-No KPI targets/thresholds "Fraud rate" is meaningless without a benchmark (is 0.3% good or bad?) Add a "Target" column: Success > 95%, Fraud < 0.5%
-"High-Risk Merchant" undefined What threshold? 1%? 2%? This is the single most important undefined term Define explicitly: "fraud rate > 2% AND ≥ 10 transactions"
-No prioritization 8 questions is a lot — which 2–3 would you answer first if time-constrained? Add a "Priority" tag (P1/P2/P3) or reorder by business impact
-No expected insight type Reader doesn't know if Q3 should yield a chart, a table, or a number Add a column: "Expected Output" (e.g., "Top 5 merchants by fraud loss")
-Q4 "unusually high" is vague "Unusual" relative to what? Mean? Median? Peer group? Specify: "> 2 standard deviations above customer average"
-No time dimension on KPIs Are KPIs daily, monthly, or all-time? Specify granularity: "Monthly rolling" or "Trailing 12 months"
-Missing failure reason taxonomy Q7 asks "main reasons for failure" — but what are the possible reasons? List them: insufficient_funds, timeout, bank_declined, fraud_block, invalid_card
-No segmentation dimensions listed "Segments" in Q8 is undefined Define: by payment method? by merchant tier? by customer cohort?
-No link to business actions Each question should hint at "what decision does this inform?" Add a "Decision Informed" column
+**Type:** Business Analysis + SQL Data Analysis  
+**Domain:** Fintech / Digital Payments  
+**Level:** Intermediate  
+
+---
+
+### Project Goal
+
+Analyze PayNova’s payment transaction data to answer critical business questions around:
+
+- Payment success rates
+- Channel & payment method performance
+- Fraud patterns and risk
+- Customer & merchant value
+- Revenue and operational efficiency
+
+This project shows how a Business Analyst in Fintech uses SQL to turn raw transaction data into clear insights and actionable recommendations.
+
+---
+
+### Business Context
+
+**PayNova** is a digital payments company that processes transactions via:
+
+- UPI / Instant Bank Transfer
+- Credit & Debit Cards
+- Digital Wallet
+- Bank Transfer
+
+Management wants data-driven answers to improve success rates, reduce fraud losses, and grow high-value merchants and customers.
+
+---
+
+### Project Structure
+
+```
+fintech-sql-ba-project/
+├── 01-business-context/     → Business questions & KPIs
+├── 02-data/                 → Sample transactions dataset + schema
+├── 03-sql-analysis/         → All SQL queries (numbered & commented)
+├── 04-insights/             → Key findings
+├── 05-recommendations/      → Actionable recommendations
+├── docs/                    → Project summary
+└── README.md
+```
+
+---
+
+### How to Run
+
+1. Download and unzip the project
+2. Import `02-data/transactions.csv` into any SQL tool (SQLite, PostgreSQL, MySQL, BigQuery, etc.)
+3. Run the SQL files in `03-sql-analysis/` in order
+4. Review insights and recommendations
+
+**Recommended free tools:**
+- DB Browser for SQLite
+- PostgreSQL + DBeaver
+- Google BigQuery (free tier)
+
+---
+
+### Skills Demonstrated
+
+- Business problem framing (Fintech context)
+- SQL (aggregations, CASE, CTEs, window functions, date analysis)
+- Fraud & risk analysis
+- Turning data into business recommendations
+- Professional GitHub portfolio structure
+
+---
+
+**Perfect for:** Business Analyst / Data Analyst / Fintech Analyst portfolios and interviews.
